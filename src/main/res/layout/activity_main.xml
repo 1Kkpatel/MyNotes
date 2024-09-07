@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:id="@+id/recyclerNotes"
+
+        />
+
+    <LinearLayout
+        android:id="@+id/llNoNotes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:visibility="visible"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:id="@+id/emptyNotes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Empty Notes"
+            android:textSize="30sp"
+            />
+        <TextView
+            android:id="@+id/nothing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Noting Found"
+            android:textSize="15sp"
+            />
+        <Button
+            android:id="@+id/btnCreateNotes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create a Note"
+            />
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="TODO"
+        android:src="@drawable/float_btn"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        app:borderWidth="2dp"
+        android:backgroundTint="@color/purple"
+        android:tint="#fff"
+
+
+        />
+
+</RelativeLayout>
